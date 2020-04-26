@@ -17,10 +17,21 @@ quedan.addEventListener('click', empezar)
 function empezar() {
 let terminar=setInterval(botonActivo, 2500);
     setTimeout(function(){clearInterval(terminar);
-  if (i > 1) {			  
-  puntaje.innerHTML = 'Termino el tiempo. Encontraste ' + i + ' veces a la rata Vaccaro. Este especimen es muy raro, habita en las mazmorras de Ezeiza y pocos lo han visto, felicitaciones';document.querySelector('.btn1').classList.add("rotar");document.querySelector('.btn2').classList.add("rotar");document.querySelector('.btn3').classList.add("rotar");document.querySelector('.btn4').classList.add("rotar")} else {puntaje.innerHTML ='Termino el tiempo. La rata Vaccaro es muy escurridiza, mejor suerte la proxima'}
-  segundos.innerHTML = '';}  ,19500);
-    quedan.style.visibility = "hidden"
+    if (i > 15) {			  
+      puntaje.innerHTML = 'Solo una rata como Vaccaro puede encontrarlo mas de 15 veces! Ratonazo';
+      document.querySelector('.btn1').classList.add("rotarinvertido");
+      document.querySelector('.btn2').classList.add("rotarinvertido");
+      document.querySelector('.btn3').classList.add("rotarinvertido");
+      document.querySelector('.btn4').classList.add("rotarinvertido");
+      } else if (i > 1) {
+      puntaje.innerHTML = 'Termino el tiempo. Encontraste ' + i + ' veces a la rata Vaccaro. Este especimen es muy raro, habita en las     mazmorras de Ezeiza y pocos lo han visto, felicitaciones';
+      document.querySelector('.btn1').classList.add("rotar");
+      document.querySelector('.btn2').classList.add("rotar");
+      document.querySelector('.btn3').classList.add("rotar");
+      document.querySelector('.btn4').classList.add("rotar");
+      } else { puntaje.innerHTML ='Termino el tiempo. La rata Vaccaro es muy escurridiza, mejor suerte la proxima'};                     
+      segundos.innerHTML = '';}  ,19500);
+      quedan.style.visibility = "hidden"
     }
 
 function botonActivo(){
