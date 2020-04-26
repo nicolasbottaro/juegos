@@ -40,6 +40,7 @@ function sumarPuntaje(){
   i++;
   puntaje.innerHTML = 'Puntaje: ' + i;
   this.innerHTML = '+1';
+  puntaje.classList.add("btn-success");
   setTimeout(sacarSuccess,850)
   }
 }
