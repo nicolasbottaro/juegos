@@ -12,18 +12,16 @@ button1.addEventListener('click', sumarPuntaje);
 button2.addEventListener('click', sumarPuntaje)
 button3.addEventListener('click', sumarPuntaje)
 button4.addEventListener('click', sumarPuntaje)
-
-
 quedan.addEventListener('click', empezar)
 
  
 function empezar() {
-		let terminar=setInterval(botonActivo, 2500);
+let terminar=setInterval(botonActivo, 2500);
     setTimeout(function(){clearInterval(terminar);
   if (puntaje > 1) {			  
   puntaje.innerHTML = 'Termino el tiempo. Encontraste ' + i + ' veces a la rata Vaccaro. Este especimen es muy raro, habita en las mazmorras de Ezeiza y pocos lo han visto, felicitaciones!';} else {'Termino el tiempo. La rata Vaccaro es muy escurridiza, mejor suerte la proxima'}
-  quedan.innerHTML = '';}  ,19500);
-    segundos.style.visibility = "hidden"
+  segundos.innerHTML = '';}  ,19500);
+    quedan.style.visibility = "hidden"
     }
 
 
