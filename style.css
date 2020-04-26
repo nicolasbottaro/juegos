@@ -12,6 +12,7 @@
     margin-top:2.3em;
     border:none;
     outline:none;
+    color:#04de04;
 }
 
 p {
@@ -41,6 +42,7 @@ button {
     margin-top:2.3em;
     border:none;
     outline:none;
+    color:#04de04;
 }
 
 button:focus {
