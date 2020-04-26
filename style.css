@@ -107,6 +107,22 @@ button:active {
     -webkit-animation: rotation 2s infinite linear;	
 }
 
+.btn.rotarinvertido {
+    background-image: url(./seba.png);
+    background-size:52px 72px;
+    background-repeat: no-repeat;
+    background-position:center;
+    width:52px;
+    height:75px;
+    margin-top:2.3em;
+    border:none;
+    outline:none;
+    color:#04de04;
+    -webkit-animation: rotation 2s infinite linear;
+    -webkit-filter: invert(1);
+    filter: invert(1);
+}
+
 @-webkit-keyframes rotation {
 		from {
 				-webkit-transform: rotate(0deg);
