@@ -13,14 +13,16 @@ button3.addEventListener('click', sumarPuntaje)
 button4.addEventListener('click', sumarPuntaje)
 
 
-let empezar = setInterval(botonActivo, 2500);
-setTimeout(Apagar,19000)
+quedan.addEventListener('click', empezar)
 
-function Apagar() {
-  clearInterval(empezar);
+ 
+function empezar() {
+		let terminar=setInterval(botonActivo, 2500);
+    setTimeout(function(){clearInterval(terminar);
   puntaje.innerHTML = 'Termino el tiempo. Tu puntaje fue de ' + i + ' puntos';
-  quedan.innerHTML = '';
-}
+  quedan.innerHTML = '';}  ,19500);
+    quedan.style.visibility = "hidden"
+    }
 
 
 function botonActivo(){
