@@ -44,6 +44,15 @@ button {
     outline:none;
     color:#04de04;
 }
+button .empezar {
+    background-image: none;
+    width:auto;
+    height:auto;
+    margin-top:2.3em;
+    border:none;
+    outline:none;
+    color:#04de04;
+}
 
 button:focus {
     border:none;
