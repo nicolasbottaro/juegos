@@ -1,4 +1,3 @@
-/Choose a random color
 const button = document.querySelector('.btn1')
 const button1 = document.querySelector('.btn2')
 const texto = document.querySelector('p')
