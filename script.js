@@ -18,7 +18,7 @@ function empezar() {
 let terminar=setInterval(botonActivo, 2500);
     setTimeout(function(){clearInterval(terminar);
   if (i > 1) {			  
-  puntaje.innerHTML = 'Termino el tiempo. Encontraste ' + i + ' veces a la rata Vaccaro. Este especimen es muy raro, habita en las mazmorras de Ezeiza y pocos lo han visto, felicitaciones';} else {puntaje.innerHTML ='Termino el tiempo. La rata Vaccaro es muy escurridiza, mejor suerte la proxima'}
+  puntaje.innerHTML = 'Termino el tiempo. Encontraste ' + i + ' veces a la rata Vaccaro. Este especimen es muy raro, habita en las mazmorras de Ezeiza y pocos lo han visto, felicitaciones';document.querySelector('.btn1').classList.add("rotar")} else {puntaje.innerHTML ='Termino el tiempo. La rata Vaccaro es muy escurridiza, mejor suerte la proxima'}
   segundos.innerHTML = '';}  ,19500);
     quedan.style.visibility = "hidden"
     }
