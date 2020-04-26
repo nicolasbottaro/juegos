@@ -12,10 +12,7 @@
     margin-top:2.3em;
     border:none;
     outline:none;
-    color:white;
-    background-color:black;
-    font-family:'Bangers', cursive;
-    border-radius:6px;
+    color:#04de04;
 }
 
 p {
@@ -54,7 +51,11 @@ button.empezar {
     margin-top:2.3em;
     border:none;
     outline:none;
-    color:#04de04;
+
+    color:white;
+    background-color:black;
+    font-family:'Bangers', cursive;
+    border-radius:6px;
 }
 
 button:focus {
