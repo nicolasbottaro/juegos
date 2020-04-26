@@ -3,7 +3,7 @@ const button2 = document.querySelector('.btn2')
 const button3 = document.querySelector('.btn3')
 const button4 = document.querySelector('.btn4')
 const puntaje = document.querySelector('h2')
-const quedan = document.querySelector('p')
+const quedan = document.querySelector('.empezar')
 var i = 0
 let activo = 1
 
