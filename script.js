@@ -31,7 +31,6 @@ function botonActivo(){
 
 function botonNoActivo(){
   document.querySelector('.btn'+activo).classList.remove("activo");
-  puntaje.classList.remove("btn-success")
 }
 
 
