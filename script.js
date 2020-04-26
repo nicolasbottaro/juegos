@@ -39,10 +39,12 @@ function sumarPuntaje(){
   if (this.classList.contains('activo') === true) {
   i++;
   puntaje.innerHTML = 'Puntaje: ' + i;
+  this.innerHTML = '+1';
   setTimeout(sacarSuccess,850)
   }
 }
 
 function sacarSuccess (){
-  puntaje.classList.remove("btn-success")
+  puntaje.classList.remove("btn-success");
+  document.querySelector('.btn'+activo).innerHTML = '';
 }
