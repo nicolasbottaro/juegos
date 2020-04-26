@@ -19,7 +19,7 @@ quedan.addEventListener('click', empezar)
 function empezar() {
 		let terminar=setInterval(botonActivo, 2500);
     setTimeout(function(){clearInterval(terminar);
-  puntaje.innerHTML = 'Termino el tiempo. Tu puntaje fue de ' + i + ' puntos';
+  puntaje.innerHTML = 'Termino el tiempo. Encontraste ' + i + ' vez/veces a la rata Vaccaro. Este especimen es muy raro, habita en las mazmorras de Ezeiza y pocos lo han visto, felicitaciones!';
   quedan.innerHTML = '';}  ,19500);
     quedan.style.visibility = "hidden"
     }
