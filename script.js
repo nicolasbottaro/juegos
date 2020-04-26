@@ -4,6 +4,7 @@ const button3 = document.querySelector('.btn3')
 const button4 = document.querySelector('.btn4')
 const puntaje = document.querySelector('h2')
 const quedan = document.querySelector('.empezar')
+const segundos = document.querySelector('p')
 var i = 0
 let activo = 1
 
@@ -19,9 +20,10 @@ quedan.addEventListener('click', empezar)
 function empezar() {
 		let terminar=setInterval(botonActivo, 2500);
     setTimeout(function(){clearInterval(terminar);
-  puntaje.innerHTML = 'Termino el tiempo. Encontraste ' + i + ' vez/veces a la rata Vaccaro. Este especimen es muy raro, habita en las mazmorras de Ezeiza y pocos lo han visto, felicitaciones!';
+  if (puntaje > 1) {			  
+  puntaje.innerHTML = 'Termino el tiempo. Encontraste ' + i + ' veces a la rata Vaccaro. Este especimen es muy raro, habita en las mazmorras de Ezeiza y pocos lo han visto, felicitaciones!';} else {'Termino el tiempo. La rata Vaccaro es muy escurridiza, mejor suerte la proxima'}
   quedan.innerHTML = '';}  ,19500);
-    quedan.style.visibility = "hidden"
+    segundos.style.visibility = "hidden"
     }
 
 
