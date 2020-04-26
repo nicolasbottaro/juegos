@@ -1,4 +1,14 @@
+.divimg {
+    margin-top: 2em;
+}
 
-button {
-    margin-top: 10vh
+.btn.activo {
+    background-color:red;
+}
+
+.divimg h2 {
+    font-size:1.5em;
+}
+p {
+    font-size:0.8em;
 }
