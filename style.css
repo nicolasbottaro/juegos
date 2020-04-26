@@ -4,11 +4,11 @@
 
 .btn.activo {
     background-image: url(./seba.png);
-    background-size:70px 70px;
+    background-size:70px auto;
     background-repeat: no-repeat;
     background-position:center;
     width:70px;
-    height:70px;
+    height:auto;
     margin-top:2.3em;
     border:none;
     outline:none;
@@ -33,12 +33,22 @@ p {
 
 button {
     background-image: none;
-    background-size:50px 50px;
+    background-size:70px auto;
     background-repeat: no-repeat;
     background-position:center;
-    width:50px;
-    height:50px;
+    width:70px;
+    height:auto;
     margin-top:2.3em;
+    border:none;
+    outline:none;
+}
+
+button:focus {
+    border:none;
+    outline:none;
+}
+
+button:active {
     border:none;
     outline:none;
 }
