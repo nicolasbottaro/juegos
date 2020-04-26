@@ -30,6 +30,3 @@ function changeBackground1(){
 }
 
 
-button {
-    margin-top: 50vh
-}
