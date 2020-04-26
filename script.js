@@ -30,13 +30,16 @@ function botonActivo(){
 }
 
 function botonNoActivo(){
-  document.querySelector('.btn'+activo).classList.remove("activo")
+  document.querySelector('.btn'+activo).classList.remove("activo");
+  puntaje.classList.remove("btn-success")
 }
+
 
 
 function sumarPuntaje(){
   if (this.classList.contains('activo') === true) {
   i++;
   puntaje.innerHTML = 'Puntaje: ' + i;
+  puntaje.classList.add("btn-success")
   }
 }
