@@ -14,7 +14,7 @@ button4.addEventListener('click', sumarPuntaje)
 
 
 let empezar = setInterval(botonActivo, 2500);
-setTimeout(Apagar,20000)
+setTimeout(Apagar,19000)
 
 function Apagar() {
   clearInterval(empezar);
