@@ -17,7 +17,7 @@ quedan.addEventListener('click', empezar)
 function empezar() {
 let terminar=setInterval(botonActivo, 2500);
     setTimeout(function(){clearInterval(terminar);
-    if (i > 15) {			  
+    if (i > 16) {			  
       puntaje.innerHTML = 'Solo una rata como Vaccaro puede encontrarlo mas de 15 veces! Ratonazo';
       document.querySelector('.btn1').classList.add("rotarinvertido");
       document.querySelector('.btn2').classList.add("rotarinvertido");
