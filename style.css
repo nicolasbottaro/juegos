@@ -12,7 +12,10 @@
     margin-top:2.3em;
     border:none;
     outline:none;
-    color:#04de04;
+    color:white;
+    background-color:black;
+    font-family:'Bangers', cursive;
+    border-radius:6px;
 }
 
 p {
