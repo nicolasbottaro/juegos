@@ -72,6 +72,8 @@ button.empezar {
 button:focus {
     border:none;
     outline:none;
+    cursor:default;
+    box-shadow:none;
 }
 
 button:active {
