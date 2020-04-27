@@ -24,6 +24,8 @@ h1.invertido {
     border:none;
     outline:none;
     color:#04de04;
+    cursor:default;
+    box-shadow:none;
 }
 
 p {
@@ -69,6 +71,14 @@ button.empezar {
     border-radius:6px;
 }
 
+button.btn {
+    border:none;
+    outline:none;
+    cursor:default;
+    box-shadow:none;
+}
+
+
 button.btn:focus {
     border:none;
     outline:none;
@@ -76,9 +86,11 @@ button.btn:focus {
     box-shadow:none;
 }
 
-button:active {
+button.btn:active {
     border:none;
     outline:none;
+    cursor:default;
+    box-shadow:none;
 }
 
 #preloadedImages
