@@ -69,7 +69,7 @@ button.empezar {
     border-radius:6px;
 }
 
-button:focus {
+button.btn:focus {
     border:none;
     outline:none;
     cursor:default;
