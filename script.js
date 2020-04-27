@@ -3,6 +3,7 @@ const button2 = document.querySelector('.btn2')
 const button3 = document.querySelector('.btn3')
 const button4 = document.querySelector('.btn4')
 const puntaje = document.querySelector('h2')
+const body = document.querySelector('body')
 const quedan = document.querySelector('.empezar')
 const segundos = document.querySelector('p')
 var i = 0
@@ -18,11 +19,12 @@ function empezar() {
 let terminar=setInterval(botonActivo, 2500);
     setTimeout(function(){clearInterval(terminar);
     if (i > 16) {			  
-      puntaje.innerHTML = 'Solo una rata como Vaccaro puede encontrarlo mas de 15 veces! Ratonazo';
+      puntaje.innerHTML = 'Solo una rata como Vaccaro puede encontrarse a si mismo mas de 15 veces! Ratonazo profesional!';
       document.querySelector('.btn1').classList.add("rotarinvertido");
       document.querySelector('.btn2').classList.add("rotarinvertido");
       document.querySelector('.btn3').classList.add("rotarinvertido");
       document.querySelector('.btn4').classList.add("rotarinvertido");
+        document.querySelector('body').classList.add("invertido");
       } else if (i > 1) {
       puntaje.innerHTML = 'Termino el tiempo. Encontraste ' + i + ' veces a la rata Vaccaro. Este especimen es muy raro, habita en las     mazmorras de Ezeiza y pocos lo han visto, felicitaciones';
       document.querySelector('.btn1').classList.add("rotar");
