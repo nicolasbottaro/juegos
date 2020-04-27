@@ -16,7 +16,18 @@ button3.addEventListener('click', sumarPuntaje)
 button4.addEventListener('click', sumarPuntaje)
 quedan.addEventListener('click', empezar)
 
+
+
+
+
 function empezar() {
+var i = 0
+let activo = 1
+document.querySelector('.btn1').classList.remove("rotarinvertido");
+document.querySelector('.btn2').classList.remove("rotarinvertido");
+document.querySelector('.btn3').classList.remove("rotarinvertido");
+document.querySelector('.btn4').classList.remove("rotarinvertido");
+
 let terminar=setInterval(botonActivo, 2500);
 setTimeout(function(){clearInterval(terminar);
     if (i > 16) {			  
