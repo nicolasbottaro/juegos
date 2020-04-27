@@ -4,6 +4,7 @@ const button3 = document.querySelector('.btn3')
 const button4 = document.querySelector('.btn4')
 const puntaje = document.querySelector('h2')
 const body = document.querySelector('body')
+const h1 = document.querySelector('h1')
 const quedan = document.querySelector('.empezar')
 const segundos = document.querySelector('p')
 var i = 0
@@ -25,6 +26,7 @@ let terminar=setInterval(botonActivo, 2500);
       document.querySelector('.btn3').classList.add("rotarinvertido");
       document.querySelector('.btn4').classList.add("rotarinvertido");
         document.querySelector('body').classList.add("invertido");
+        document.querySelector('h1').classList.add("invertido");
       } else if (i > 1) {
       puntaje.innerHTML = 'Termino el tiempo. Encontraste ' + i + ' veces a la rata Vaccaro. Este especimen es muy raro, habita en las     mazmorras de Ezeiza y pocos lo han visto, felicitaciones';
       document.querySelector('.btn1').classList.add("rotar");
