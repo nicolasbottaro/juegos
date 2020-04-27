@@ -6,6 +6,12 @@ body {
     background: #e6e6e6;
 }
 
+body.invertido {
+    background: black;
+}
+h1.invertido {
+    background: white;
+}
 
 .btn.activo {
     background-image: url(./seba.png);
