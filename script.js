@@ -18,7 +18,7 @@ quedan.addEventListener('click', empezar)
 
 function empezar() {
 let terminar=setInterval(botonActivo, 2500);
-    setTimeout(function(){clearInterval(terminar);
+setTimeout(function(){clearInterval(terminar);
     if (i > 16) {			  
       puntaje.innerHTML = 'Solo una rata como Vaccaro puede encontrarse a si mismo mas de 15 veces! Ratonazo profesional!';
       document.querySelector('.btn1').classList.add("rotarinvertido");
@@ -27,16 +27,22 @@ let terminar=setInterval(botonActivo, 2500);
       document.querySelector('.btn4').classList.add("rotarinvertido");
         document.querySelector('body').classList.add("invertido");
         document.querySelector('h1').classList.add("invertido");
+        quedan.style.visibility = "visible";
+        quedan.innerHTML = "Volver a jugar";
       } else if (i > 1) {
       puntaje.innerHTML = 'Termino el tiempo. Encontraste ' + i + ' veces a la rata Vaccaro. Este especimen es muy raro, habita en las     mazmorras de Ezeiza y pocos lo han visto, felicitaciones';
       document.querySelector('.btn1').classList.add("rotar");
       document.querySelector('.btn2').classList.add("rotar");
       document.querySelector('.btn3').classList.add("rotar");
       document.querySelector('.btn4').classList.add("rotar");
-      } else { puntaje.innerHTML ='Termino el tiempo. La rata Vaccaro es muy escurridiza, mejor suerte la proxima'};                     
+          quedan.style.visibility = "visible";
+          quedan.innerHTML = "Volver a jugar";
+      } else { puntaje.innerHTML ='Termino el tiempo. La rata Vaccaro es muy escurridiza, mejor suerte la proxima'}; 
+      quedan.style.visibility = "visible";
+      quedan.innerHTML = "Volver a jugar";
       segundos.innerHTML = '';}  ,19500);
-      quedan.style.visibility = "hidden"
-    }
+quedan.style.visibility = "hidden"
+}
 
 function botonActivo(){
   activo = Math.round(Math.random()*3) +1 ;
