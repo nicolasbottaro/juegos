@@ -21,8 +21,8 @@ quedan.addEventListener('click', empezar)
 
 
 function empezar() {
-let i = 0
-let activo = 1
+i = 0;
+activo = 1;
 document.querySelector('.btn1').classList.remove("rotarinvertido");
 document.querySelector('.btn2').classList.remove("rotarinvertido");
 document.querySelector('.btn3').classList.remove("rotarinvertido");
