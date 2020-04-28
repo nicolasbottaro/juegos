@@ -4,7 +4,6 @@
 
 body {
     background: #e6e6e6;
-    touch-action: manipulation;
 }
 
 body.invertido {
