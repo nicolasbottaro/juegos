@@ -21,7 +21,7 @@ quedan.addEventListener('click', empezar)
 
 
 function empezar() {
-var i = 0
+let i = 0
 let activo = 1
 document.querySelector('.btn1').classList.remove("rotarinvertido");
 document.querySelector('.btn2').classList.remove("rotarinvertido");
@@ -38,6 +38,7 @@ setTimeout(function(){clearInterval(terminar);
       document.querySelector('.btn4').classList.add("rotarinvertido");
         document.querySelector('body').classList.add("invertido");
         document.querySelector('h1').classList.add("invertido");
+        i = 0;
         quedan.style.visibility = "visible";
         quedan.innerHTML = "Volver a jugar";
       } else if (i > 1) {
@@ -46,11 +47,13 @@ setTimeout(function(){clearInterval(terminar);
       document.querySelector('.btn2').classList.add("rotar");
       document.querySelector('.btn3').classList.add("rotar");
       document.querySelector('.btn4').classList.add("rotar");
+          i = 0;
           quedan.style.visibility = "visible";
           quedan.innerHTML = "Volver a jugar";
       } else { puntaje.innerHTML ='Termino el tiempo. La rata Vaccaro es muy escurridiza, mejor suerte la proxima'}; 
       quedan.style.visibility = "visible";
       quedan.innerHTML = "Volver a jugar";
+      i = 0;
       segundos.innerHTML = '';}  ,19500);
 quedan.style.visibility = "hidden"
 }
